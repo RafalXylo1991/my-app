@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Basic HTML5 Template</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="xyloh" >
+
+ 
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+
+#list{
+width: 400px;
+margin-left: auto;
+margin-right: auto;
+
+}
+p{
+width: auto;
+text-align: center;
+border-width: 20px;
+border-color: darkgray;
+}
+</style>
+
+
+</head>
+
+<body>
+   
+        <% per.forEach((per)=> { %>
+            <div id="list">
+                <p >
+                    <%= per.name %>
+                </p>
+                <p >
+                    <%= per.age %>
+                </p>
+                <p>
+                    <%= per.sex %>
+                </p>
+                <p>
+                  <img width="400" src='<%= per.src %>'/>
+                    
+                </p>
+            </div>
+           
+        <% }) %>
+   
+</html>
